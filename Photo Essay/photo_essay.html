@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&family=Sigmar+One&effect=outline|shadow-multiple|neon" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sigmar+One&family=Alfa+Slab+One" rel="stylesheet">
+    <title>Photo Essay - Downtown A-town</title>
+    <body>
+
+        <aside>
+            <button id='A' class="button"><a href="#slide1" onclick="animation();highlight('A')">Downtown A-town</a></button>
+            <button id='B' class="button"><a href="#slide2" onclick="hide();highlight('B')">Amazing Architecture</a></button>
+            <button id='C' class="button"><a href="#slide3" onclick="highlight('C')">Fantastic Food</a></button>
+            <button id='D' class="button"><a href="#slide4" onclick="highlight('D')">Beguiling Businesses</a></button>
+            <button id='E' class="button"><a href="#slide5" onclick="highlight('E')">In Conclusion...</a></button>
+        </aside>
+
+        <main>
+            <div class="slide">
+                <h1 class="font-effect-outline" id="h1">Downton<br>A-town</h1>
+                <img src="city_hall_angle.jpg" id="cityHall">
+            </div>
+
+            <div id="slide1" class="slide" style="z-index:-2; position:absolute; top:100%;">
+                <p>6:30 a.m., Atascadero. The first rays of sunlight wash over the downtown, the sunken gardens fountain sparkling with gold. The shop owners bustle through the empty streets, opening up their stores. Atascadero's downtown area is full of small businesses. These shops and restaurants are what make our downtown unique, characterizing it with warmth and friendliness.<br>Though these places all work together to make an enjoyable downtown, each one is different. From the shops on Entrada to the restaurants on El Camino, each one is individual.</p>
+                <img src="traffic_way_tree.jpg" id="elPaseo">
+                <img src="artery.jpg" id="artery">
+                <img src="805.jpg" id="boardShop">
+            </div>
+
+            <div id="slide2" class="slide" style="position:absolute; top:200%;">
+                <h2 class="font-effect-shadow-multiple">Amazing Architecture</h2>
+                <p>The first things you will see when you go downtown are the amazing buildings.</p>
+                <p>The most noticeable buildings are the City Hall, La Plaza, and the Carlton Hotel. The latter two are modeled after the Italian Renaissance style first used by the City Hall. The City Hall was built from 1914 to 1918. However, the very first building built in Atascadero is known as the Estrada Adobe, which was built in 1797. Many other buildings downtown follow this theme as well.<br>
+                The downtown architecture is amazing, but what's inside of these buildings is even more so.</p>
+                <img src="city_hall.jpg" id="cityHall2">
+                <img src="la_plaza.jpg" id="laPlaza">
+                <img src="carlton.jpg" id="carlton">
+            </div>
+            <div id="slide3" class="slide" style="position:absolute; top:300%;">
+                <h2>Fantastic Food</h2>
+                <p>Inside many downtown buildings in Atascadero you will find delicious food.</p>
+                <p>Some of Atascadero's most iconic restaurants are Sylvester's burgers, Tent City Beer Co., and Colony Market & Deli. Between Traffic Way, West Mall, El Camino, and Palma Avenue, there are 11 restaurants. One of these restaurants, Street Side Alehouse, was voted best restaurant in 2020.</p>
+                <p>Though the restaurants are fantastic, the shops are equally so.</p>
+                <img src="tent_city_2.jpg" id="tentCity">
+                <img src="round_table.jpg" id="roundTable">
+                <img src="colony_market_2.jpg" id ="colonyMarket">
+                <img src="food_truck.jpg" id="foodTruck">
+                <img src="sylvesters.jpg" id="sylvesters">
+                <img src="malibu.jpg" id="malibu">
+                <img src="negrantis.jpg" id="negrantis">
+                <img src="byblos.jpg" id="byblos">
+                <div id="border"></div>
+            </div>
+            
+            <div id="slide4" class="slide" style="position:absolute; top:400%;">
+                <h2 class="font-effect-neon">Beguiling Businesses</h2>
+                <p>There are very many awesome shops downtown. In these shops, you can buy anything downtown from music records to board games. Some of these store include Galax</p>
+            </div>
+
+            <div id="slide5" class="slide" style="position:absolute; top:500%;">
+                <h2 class="font-effect-shadow-multiple">In Conclusion...</h2>
+                <p>
+                </p>
+            </div>
+        </main>
+
+        <script>
+            function highlight(id) {
+                document.getElementsByClassName("button").style.backgroundColor = "white";
+                document.getElementById(id).style.backgroundColor = "lightblue";
+            }
+
+            function animation() {
+                document.getElementById("h1").style.fontSize = "80px";
+                document.getElementById("h1").style.left = "140px";
+                document.getElementById("h1").style.top = "20px";
+            }
+
+            function hide() {
+                document.getElementById("h1").style.display = "none";
+            }
+        </script>
+    </body>
+</html>
